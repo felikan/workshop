@@ -2,16 +2,18 @@ html {
     font-family: "Comic Sans MS";
     max-width: 100%;
     margin: auto;
+    background-color: darkmagenta;
+    color: white;
+}
+
+div.code {
+    padding: 5px 5px;
+    border: black 1px solid;
     background-color: white;
     color: black;
 }
 
-.codeblock {
-    background-color: white;
-    color: black;
-}
-
-code.codeblock:nth-child(even) {
+.codeblock:nth-child(even) {
     background-color: lightgray;
 }
 
@@ -32,9 +34,9 @@ code .punct {
 }
 
 code .math {
-    
+    color: black;
 }
 
 code .logic {
-    
+    color: black;
 }
