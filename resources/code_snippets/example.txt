@@ -2,9 +2,8 @@ ellipse(0, 50, 33, 33); // Left circle
 
 push(); // Start a new drawing state
 strokeWeight(10);
-</br>();
 fill(204, 153, 0);
-<h>translate(50, 0)</h>;
+translate(50, 0);
 ellipse(0, 50, 33, 33); // Middle circle
 pop(); // Restore original state
 

@@ -1,7 +1,40 @@
-* {
+html {
     font-family: "Comic Sans MS";
     max-width: 100%;
     margin: auto;
-    background-color: darkmagenta;
-    color: white;
+    background-color: white;
+    color: black;
+}
+
+.codeblock {
+    background-color: white;
+    color: black;
+}
+
+code.codeblock:nth-child(even) {
+    background-color: lightgray;
+}
+
+code .comment {
+    color: grey;
+}
+
+code .funct {
+    color: blue;
+}
+
+code .number {
+    color: crimson;
+}
+
+code .punct {
+    color: black;
+}
+
+code .math {
+    
+}
+
+code .logic {
+    
 }
