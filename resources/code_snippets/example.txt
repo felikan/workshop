@@ -1,10 +1,15 @@
-ellipse(0, 50, 33, 33); // Left circle
+// Positionen
+x=(240/2)-8
+y=(128/2)-8
 
-push(); // Start a new drawing state
-strokeWeight(10);
-fill(204, 153, 0);
-translate(50, 0);
-ellipse(0, 50, 33, 33); // Middle circle
-pop(); // Restore original state
+// Main Funktion
+function TIC()
+	// Steuerung
+	if btn(0) then y=y-1 end
+	if btn(1) then y=y+1 end
+	if btn(2) then x=x-1 end
+	if btn(3) then x=x+1 end
 
-ellipse(100, 50, 33, 33); // Right circle
+	cls(0)	// Hintergrund
+	spr(35,x,y,-1,1,0,0) // Spielcharakter
+end
