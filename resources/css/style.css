@@ -7,13 +7,16 @@ html {
 }
 
 div.code {
-    padding: 5px 5px;
     border: black 1px solid;
     background-color: white;
     color: black;
 }
 
-.codeblock:nth-child(even) {
+.codeblock>p {
+    padding: 3px 5px;
+}
+
+.codeblock>p:nth-child(2n+2) {
     background-color: lightgray;
 }
 

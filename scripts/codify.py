@@ -33,5 +33,7 @@ for file in code_files:
                     if match.group(1):
                         html_tag = '<span class="{token_class}">{content}</span>'.format(token_class=key, content = match.group(1))
                         target_line = target_line[:match.start()]+html_tag+target_line[match.end():]
+            if (target_line == "\n"):
+                target_line = "</br>"
             t.write("<p>"+target_line+"</p>")
         t.write("</code>")
